@@ -1,0 +1,123 @@
+body {
+    flex: flex-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: #54b1f7;
+}
+
+.icon {
+    display: flex;
+    position: absolute;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav a {
+    position: relative;
+    padding: 10px 20px 10px 1px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 90%;
+    height: 4px;
+}
+
+.dog-principal h1 {
+    position: relative;
+    width: 50%;
+    display: flexbox;
+    flex-wrap: row wrap;
+    top: -20vh;
+    left: 0.5em;
+    font-size: 8em;
+}
+
+.textos {
+    display: flex;
+    flex-flow: flow nowrap;
+}
+
+.textos p {
+    display: flex;
+    flex: 1;
+    flex-flow: wrap;
+    height: min-content;
+    width: 20%;
+    left: 9em;
+    position: absolute;
+    font-family: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+}
+
+.dog-principal img {
+    width: 40%;
+}
+
+.dog-estilo {
+    display: flex;
+}
+
+.dog-estilo p {
+    font-family: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    font-size: 3em;
+}
+
+.dog-estilo img {
+    width: 50%;
+    position: relative;
+    top: -50vh;
+}
+
+.fotos-fim {
+    position: relative;
+    top: -10vh;
+    width: 158vh;
+    display: flex;
+    gap: 5px;
+}
+
+.fotos-fim img {
+    width: 50%;
+    height: 90vh;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5ms;
+}
+
+.fotos-fim img:hover {
+    flex: 4;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    top: -10vh;
+    font-family: Barlow Condensed;
+}
